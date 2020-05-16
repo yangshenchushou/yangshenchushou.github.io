@@ -6,10 +6,119 @@
     <description>Recent content on Alex&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 May 2020 23:57:32 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 20:27:00 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML入门笔记》博客</title>
+      <link>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 16 May 2020 20:27:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0%E5%8D%9A%E5%AE%A2/</guid>
+      
+        <description>&lt;p&gt;[toc]&lt;/p&gt;
+&lt;p&gt;vscode好用的格式化插件 prettier （调出 用ctrl+shift+p
+：format document），自动开启的方式：左上角-首选项-设置搜索auto save选择onfocuschange;再搜索 format on save,进行勾选&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;html-是谁发明的&#34;&gt;HTML 是谁发明的&lt;/h1&gt;
+&lt;p&gt;李爵士&lt;/p&gt;
+&lt;h1 id=&#34;html-起手应该写什么&#34;&gt;HTML 起手应该写什么&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;创建新文件夹并拖动到vscode中&lt;/li&gt;
+&lt;li&gt;在vscode中创建index。html&lt;/li&gt;
+&lt;li&gt;写感叹号按tab键&lt;/li&gt;
+&lt;li&gt;lang=&amp;quot;en&amp;quot;改成&amp;quot;zh-CN&amp;rdquo;     #lang是language&lt;/li&gt;
+&lt;li&gt;head里面写看不见的：
+&lt;ul&gt;
+&lt;li&gt;charset=&amp;quot;UTF-8&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;常用的章节的标签&#34;&gt;常用的章节的标签&lt;/h1&gt;
+&lt;h3 id=&#34;表示标题的h1h6&#34;&gt;表示标题的h1~h6&lt;/h3&gt;
+&lt;h3 id=&#34;表示章节section&#34;&gt;表示章节section&lt;/h3&gt;
+&lt;h3 id=&#34;表示文章article&#34;&gt;表示文章article&lt;/h3&gt;
+&lt;h3 id=&#34;表示段落p&#34;&gt;表示段落p&lt;/h3&gt;
+&lt;h3 id=&#34;表示头部header&#34;&gt;表示头部header&lt;/h3&gt;
+&lt;p&gt;插入顶部广告时可用到，在&lt;!-- raw HTML omitted --&gt;前面写&lt;/p&gt;
+&lt;h3 id=&#34;表示底部footer&#34;&gt;表示底部footer&lt;/h3&gt;
+&lt;p&gt;可用作版权声明。版权标识可以用 &amp;amp;@;&lt;/p&gt;
+&lt;h3 id=&#34;表示主要内容main&#34;&gt;表示主要内容main&lt;/h3&gt;
+&lt;h3 id=&#34;旁支内容aside&#34;&gt;旁支内容aside&lt;/h3&gt;
+&lt;p&gt;如参考资料、导航内容等&lt;/p&gt;
+&lt;h3 id=&#34;划分div&#34;&gt;划分div&lt;/h3&gt;
+&lt;h3 id=&#34;运用&#34;&gt;运用&lt;/h3&gt;
+&lt;p&gt;在header下面，有一整块&lt;!-- raw HTML omitted --&gt;,这个整块里面有&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;,main里面有&lt;!-- raw HTML omitted --&gt;和&lt;!-- raw HTML omitted --&gt;,section里面有&lt;!-- raw HTML omitted --&gt;和&lt;!-- raw HTML omitted --&gt;还有其他&lt;!-- raw HTML omitted --&gt;(包含&lt;!-- raw HTML omitted --&gt;和&lt;!-- raw HTML omitted --&gt;)&lt;/p&gt;
+&lt;h1 id=&#34;全局属性所有标签都有的属性&#34;&gt;全局属性（所有标签都有的属性）&lt;/h1&gt;
+&lt;h3 id=&#34;class&#34;&gt;class&lt;/h3&gt;
+&lt;p&gt;class=&amp;quot;middle border&amp;rdquo; 后面接的值，可以用点去调用如&amp;rdquo;.middle{}&amp;quot;，&lt;/p&gt;
+&lt;h3 id=&#34;contenteditable&#34;&gt;contenteditable&lt;/h3&gt;
+&lt;p&gt;可以使任何一个元素被编辑&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;让style被看见和被编辑的特殊技巧：将style放到body中来，在中括号中写上display：block，就可以让style标签被看见；在加入contenteditable，就可以直接编辑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;hidden&#34;&gt;hidden&lt;/h3&gt;
+&lt;p&gt;隐藏内容&lt;/p&gt;
+&lt;h3 id=&#34;id&#34;&gt;id&lt;/h3&gt;
+&lt;p&gt;id本身定义是全局唯一，但是不到万不得已不要用id。因为即使重复使用了同个id后也不报错
+简写的方式是#去调用&lt;/p&gt;
+&lt;h3 id=&#34;style&#34;&gt;style&lt;/h3&gt;
+&lt;h3 id=&#34;tabindex&#34;&gt;tabindex&lt;/h3&gt;
+&lt;p&gt;通过在tabindex=1/2/3,控制用tab键点击的顺序&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;特殊值：0，tab点击顺序的最后一个；-1，不会被点击事件遍历&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;title&#34;&gt;title&lt;/h3&gt;
+&lt;p&gt;写在标签中，后接双引号的内容，引号内的内容就是完整的内容。
+标题太长的处理方法：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;white-space:nowrap;&lt;/li&gt;
+&lt;li&gt;text-overflow:ellipsis;&lt;/li&gt;
+&lt;li&gt;overflow:hidden;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;默认样式的查看&#34;&gt;默认样式的查看&lt;/h1&gt;
+&lt;p&gt;通过chrome开发者工具，elements-styles-user agent stylesheet&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;user agent就是浏览器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;常用的内容标签及意思&#34;&gt;常用的内容标签及意思&lt;/h1&gt;
+&lt;h3 id=&#34;olli&#34;&gt;ol+li&lt;/h3&gt;
+&lt;p&gt;先打ol按tab，再打li按tab。
+li：list item 列表中的一项&lt;/p&gt;
+&lt;h3 id=&#34;ulli&#34;&gt;ul+li&lt;/h3&gt;
+&lt;p&gt;unorder list&lt;/p&gt;
+&lt;h3 id=&#34;dldtdd&#34;&gt;dl+dt+dd&lt;/h3&gt;
+&lt;p&gt;打dl+ 再按tab&lt;/p&gt;
+&lt;p&gt;description list 描述性列表
+description term 被描述的项目
+description data？具体数据&lt;/p&gt;
+&lt;h3 id=&#34;pre&#34;&gt;pre&lt;/h3&gt;
+&lt;p&gt;如果想保留打的任意多个空格，回车，tab，应该用pre包裹住内容。
+最前面head里再写style，对pre{font: inherit;}&lt;/p&gt;
+&lt;h3 id=&#34;hr&#34;&gt;hr&lt;/h3&gt;
+&lt;p&gt;分割线&lt;/p&gt;
+&lt;h3 id=&#34;br&#34;&gt;br&lt;/h3&gt;
+&lt;p&gt;换行break&lt;/p&gt;
+&lt;h3 id=&#34;a&#34;&gt;a&lt;/h3&gt;
+&lt;p&gt;超链接&lt;!-- raw HTML omitted --&gt;新窗口打开&lt;/p&gt;
+&lt;h3 id=&#34;em&#34;&gt;em&lt;/h3&gt;
+&lt;p&gt;强调，语义，意思很重要&lt;/p&gt;
+&lt;h3 id=&#34;strong&#34;&gt;strong&lt;/h3&gt;
+&lt;p&gt;重要，本身很重要&lt;/p&gt;
+&lt;h3 id=&#34;code&#34;&gt;code&lt;/h3&gt;
+&lt;p&gt;code标签可以包裹住代码块&lt;/p&gt;
+&lt;h3 id=&#34;quote&#34;&gt;quote&lt;/h3&gt;
+&lt;p&gt;行内块级、内联的引用&lt;/p&gt;
+&lt;h3 id=&#34;blockquote&#34;&gt;blockquote&lt;/h3&gt;
+&lt;p&gt;换行引用&lt;/p&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>用hugo搭建个人博客</title>

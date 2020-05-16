@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Alex&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 10 May 2020 23:57:32 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 20:27:00 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>《HTML入门笔记》博客</title>
+      <link>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 16 May 2020 20:27:00 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%85%A5%E9%97%A8%E7%AC%94%E8%AE%B0%E5%8D%9A%E5%AE%A2/</guid>
+      <description>[toc] vscode好用的格式化插件 prettier （调出 用ctrl+shift+p ：format document），自动开启的方式：左上角-首选项-设置搜索a</description>
+    </item>
     
     <item>
       <title>用hugo搭建个人博客</title>
