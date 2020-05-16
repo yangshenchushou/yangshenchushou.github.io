@@ -1,0 +1,106 @@
+---
+title: "《HTML入门笔记》博客"
+date: 2020-05-16T20:27:00+08:00
+draft: false
+---
+
+[toc]
+
+vscode好用的格式化插件 prettier （调出 用ctrl+shift+p
+：format document），自动开启的方式：左上角-首选项-设置搜索auto save选择onfocuschange;再搜索 format on save,进行勾选
+* * *
+
+
+# HTML 是谁发明的
+李爵士
+
+
+# HTML 起手应该写什么
+
+1. 创建新文件夹并拖动到vscode中
+2. 在vscode中创建index。html
+3. 写感叹号按tab键
+4. lang="en"改成"zh-CN"     #lang是language
+5. head里面写看不见的：
+   * charset="UTF-8"
+   * <meta name="viewport" content="width=device-width,initial-scale=1.0"/>  #viewport是视窗，后面写的是自适应屏幕
+
+
+
+# 常用的章节的标签
+### 表示标题的h1~h6
+### 表示章节section
+### 表示文章article
+### 表示段落p
+### 表示头部header
+插入顶部广告时可用到，在<h1>前面写
+### 表示底部footer
+可用作版权声明。版权标识可以用 &@; 
+### 表示主要内容main
+### 旁支内容aside
+如参考资料、导航内容等
+### 划分div
+### 运用
+在header下面，有一整块<div>,这个整块里面有<main><aside>,main里面有<h1>和<section>,section里面有<h2>和<p>还有其他<section>(包含<h3>和<p>)
+
+
+# 全局属性（所有标签都有的属性）
+### class
+class="middle border" 后面接的值，可以用点去调用如".middle{}"，
+### contenteditable
+可以使任何一个元素被编辑
+* 让style被看见和被编辑的特殊技巧：将style放到body中来，在中括号中写上display：block，就可以让style标签被看见；在加入contenteditable，就可以直接编辑
+### hidden
+隐藏内容
+### id
+id本身定义是全局唯一，但是不到万不得已不要用id。因为即使重复使用了同个id后也不报错
+简写的方式是#去调用
+### style
+### tabindex
+通过在tabindex=1/2/3,控制用tab键点击的顺序
+* 特殊值：0，tab点击顺序的最后一个；-1，不会被点击事件遍历
+### title
+写在标签中，后接双引号的内容，引号内的内容就是完整的内容。
+标题太长的处理方法：
+
+* white-space:nowrap;
+* text-overflow:ellipsis;
+* overflow:hidden;
+
+
+# 默认样式的查看
+通过chrome开发者工具，elements-styles-user agent stylesheet
+* user agent就是浏览器
+
+
+# 常用的内容标签及意思
+### ol+li
+先打ol按tab，再打li按tab。
+li：list item 列表中的一项
+### ul+li
+unorder list
+### dl+dt+dd
+打dl+ 再按tab
+
+description list 描述性列表
+description term 被描述的项目
+description data？具体数据
+### pre
+如果想保留打的任意多个空格，回车，tab，应该用pre包裹住内容。
+最前面head里再写style，对pre{font: inherit;}
+### hr
+分割线
+### br
+换行break
+### a
+超链接<a href=“www.baidu.com” target=" _ blank ">新窗口打开
+### em
+强调，语义，意思很重要
+### strong
+重要，本身很重要
+### code
+code标签可以包裹住代码块
+### quote
+行内块级、内联的引用
+### blockquote
+换行引用
