@@ -6,10 +6,90 @@
     <description>Recent content on Alex&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 May 2020 20:27:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 00:04:01 +0800</lastBuildDate>
     
         <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Fri, 22 May 2020 00:04:01 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      
+        <description>&lt;h1 id=&#34;a-标签的用法&#34;&gt;a 标签的用法&lt;/h1&gt;
+&lt;h2 id=&#34;属性&#34;&gt;属性&lt;/h2&gt;
+&lt;h3 id=&#34;href--hyper-reference-超级引用链接超链接&#34;&gt;href （ hyper reference 超级引用/链接，超链接）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;要想使用a标签，又想让它什么都不做可以写JavaScript伪代码&lt;!-- raw HTML omitted --&gt;查看&lt;!-- raw HTML omitted --&gt;除此之外所有的方式都不行，要么会导致页面的刷新，要么会回到页面顶部。只有它什么都不做&lt;/li&gt;
+&lt;li&gt;a标签结合id：现在某个标签内部写上id=xxx，在需要跳转的位置，写上href=“#xxx”就可以实现跳转&lt;/li&gt;
+&lt;li&gt;href=&amp;quot;mailto:xxx@xx.com&amp;rdquo; 即可实现发送邮件到指定位置&lt;/li&gt;
+&lt;li&gt;href =&amp;quot;tel:xxxx&amp;quot;可实现直接打电话&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;target&#34;&gt;target&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;_blank 在新页面打开&lt;/li&gt;
+&lt;li&gt;_self 在当前页面打开&lt;/li&gt;
+&lt;li&gt;_top 顶层窗口打开&lt;/li&gt;
+&lt;li&gt;_parent当前界面的上一层窗口打开&lt;/li&gt;
+&lt;li&gt;xxx 如果没有这个窗口则新建一个打开；如果有这个，则第二次打开的覆盖掉之前打开的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;relnoopener&#34;&gt;rel=noopener&lt;/h3&gt;
+&lt;h2 id=&#34;其他&#34;&gt;其他&lt;/h2&gt;
+&lt;p&gt;标签中写iframe-内联HTML网页，src再接路径？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;yarn global add parcel&lt;/li&gt;
+&lt;li&gt;parcel a-href.html   #后面即为在vscode中的文件名，这种方式是本地预览&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;table-标签的用法&#34;&gt;table 标签的用法&lt;/h1&gt;
+&lt;p&gt;table标签里面只能写三个标签：thead、tbody、tfoot
+在thead标签内可以写tr行-table row，&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;行内有两列两个表头，写两个th表头-table head
+在tbody内再写一行内容
+先写tr，再写td单元格内容table data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;auto自适应，fixed固定、平均宽度；boarder-spacing表格上下左右的固定宽度;collapse表格合并&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有了boarder-collapse 为什么还需要 boarder-spacing？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;img-标签的用法&#34;&gt;img 标签的用法&lt;/h1&gt;
+&lt;p&gt;前面head部分加入img{max-width:100%;}就会成为响应式的自动根据页面缩放&lt;/p&gt;
+&lt;h1 id=&#34;form标签&#34;&gt;form标签&lt;/h1&gt;
+&lt;h2 id=&#34;基础知识&#34;&gt;基础知识&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;必须要有输入框和提交按钮&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/li&gt;
+&lt;li&gt;input 内必须写name&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;是密码&lt;/li&gt;
+&lt;li&gt;&amp;lt;input type=&amp;quot;color”&amp;gt;是选择颜色&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;做个二选一的单选框&#34;&gt;做个二选一的单选框：&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;男&lt;/li&gt;
+&lt;li&gt;&lt;!-- raw HTML omitted --&gt;女&lt;/li&gt;
+&lt;li&gt;radio是单选框，用同一个name那么就是二选一&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;做个多选框&#34;&gt;做个多选框&lt;/h2&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;养鱼
+&lt;!-- raw HTML omitted --&gt;打乒乓球&lt;/p&gt;
+&lt;h2 id=&#34;上传文件&#34;&gt;上传文件&lt;/h2&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;上传文件
+&lt;!-- raw HTML omitted --&gt;上传多个文件&lt;/p&gt;
+&lt;h2 id=&#34;建立文本框多行&#34;&gt;建立文本框(多行）&lt;/h2&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;
+如果要限定他不能调节大小，则写&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
+&lt;h2 id=&#34;建立填写下拉框&#34;&gt;建立填写下拉框&lt;/h2&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;h1 id=&#34;其他知识点&#34;&gt;其他知识点&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;canvas 画布&lt;/li&gt;
+&lt;li&gt;可以迅速生成30个p标签的方式：p{$}*30再按tab键&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      
+    </item>
     
     <item>
       <title>《HTML入门笔记》博客</title>

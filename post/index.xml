@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Alex&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 16 May 2020 20:27:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 22 May 2020 00:04:01 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HTML常用标签</title>
+      <link>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</link>
+      <pubDate>Fri, 22 May 2020 00:04:01 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/html%E5%B8%B8%E7%94%A8%E6%A0%87%E7%AD%BE/</guid>
+      <description>a 标签的用法 属性 href （ hyper reference 超级引用/链接，超链接） 要想使用a标签，又想让它什么都不做可以写JavaScript伪代码查看除此之外所有的方式都不</description>
+    </item>
     
     <item>
       <title>《HTML入门笔记》博客</title>
